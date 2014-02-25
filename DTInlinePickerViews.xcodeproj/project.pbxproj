@@ -14,6 +14,11 @@
 		AA24529318BC9949001F407F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA24529218BC9949001F407F /* Images.xcassets */; };
 		AA2452A418BC9949001F407F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AA2452A218BC9949001F407F /* InfoPlist.strings */; };
 		AA2452A618BC9949001F407F /* DTInlinePickerViewsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AA2452A518BC9949001F407F /* DTInlinePickerViewsTests.m */; };
+		AA7A459718BC9B920083DED5 /* ExampleController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA7A459518BC9B920083DED5 /* ExampleController.m */; };
+		AA7A459818BC9B920083DED5 /* ExampleController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA7A459618BC9B920083DED5 /* ExampleController.xib */; };
+		AA7A459D18BC9C2E0083DED5 /* ExampleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AA7A459C18BC9C2E0083DED5 /* ExampleCell.m */; };
+		AA7A459F18BC9C3E0083DED5 /* ExampleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA7A459E18BC9C3E0083DED5 /* ExampleCell.xib */; };
+		C163E81BC17847AD3D58047B /* DTInlinePickerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C163EDB8ED01460E113E410C /* DTInlinePickerCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +45,14 @@
 		AA2452A118BC9949001F407F /* DTInlinePickerViewsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DTInlinePickerViewsTests-Info.plist"; sourceTree = "<group>"; };
 		AA2452A318BC9949001F407F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		AA2452A518BC9949001F407F /* DTInlinePickerViewsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DTInlinePickerViewsTests.m; sourceTree = "<group>"; };
+		AA7A459418BC9B920083DED5 /* ExampleController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExampleController.h; sourceTree = "<group>"; };
+		AA7A459518BC9B920083DED5 /* ExampleController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExampleController.m; sourceTree = "<group>"; };
+		AA7A459618BC9B920083DED5 /* ExampleController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ExampleController.xib; sourceTree = "<group>"; };
+		AA7A459B18BC9C2E0083DED5 /* ExampleCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ExampleCell.h; path = Cells/ExampleCell.h; sourceTree = "<group>"; };
+		AA7A459C18BC9C2E0083DED5 /* ExampleCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ExampleCell.m; path = Cells/ExampleCell.m; sourceTree = "<group>"; };
+		AA7A459E18BC9C3E0083DED5 /* ExampleCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ExampleCell.xib; path = Cells/ExampleCell.xib; sourceTree = "<group>"; };
+		C163E0D37415109B547969C4 /* DTInlinePickerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DTInlinePickerCell.h; path = Cells/DTInlinePickerCell.h; sourceTree = "<group>"; };
+		C163EDB8ED01460E113E410C /* DTInlinePickerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DTInlinePickerCell.m; path = Cells/DTInlinePickerCell.m; sourceTree = "<group>"; };
 		DC6AEFEB12EC4C51A87EEE1F /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -85,6 +98,8 @@
 		AA24528618BC9949001F407F /* DTInlinePickerViews */ = {
 			isa = PBXGroup;
 			children = (
+				AA7A459A18BC9C0E0083DED5 /* Cells */,
+				AA7A459918BC9C070083DED5 /* Controllers */,
 				AA24528F18BC9949001F407F /* AppDelegate.h */,
 				AA24529018BC9949001F407F /* AppDelegate.m */,
 				AA24529218BC9949001F407F /* Images.xcassets */,
@@ -120,6 +135,28 @@
 				AA2452A218BC9949001F407F /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AA7A459918BC9C070083DED5 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				AA7A459418BC9B920083DED5 /* ExampleController.h */,
+				AA7A459518BC9B920083DED5 /* ExampleController.m */,
+				AA7A459618BC9B920083DED5 /* ExampleController.xib */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		AA7A459A18BC9C0E0083DED5 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				AA7A459B18BC9C2E0083DED5 /* ExampleCell.h */,
+				AA7A459C18BC9C2E0083DED5 /* ExampleCell.m */,
+				AA7A459E18BC9C3E0083DED5 /* ExampleCell.xib */,
+				C163EDB8ED01460E113E410C /* DTInlinePickerCell.m */,
+				C163E0D37415109B547969C4 /* DTInlinePickerCell.h */,
+			);
+			name = Cells;
 			sourceTree = "<group>";
 		};
 		D95BA626A51845EE9611C382 /* Frameworks */ = {
@@ -194,8 +231,6 @@
 			mainGroup = AA24527418BC9949001F407F;
 			productRefGroup = AA24527E18BC9949001F407F /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-			);
 			projectRoot = "";
 			targets = (
 				AA24527C18BC9949001F407F /* DTInlinePickerViews */,
@@ -209,7 +244,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA7A459F18BC9C3E0083DED5 /* ExampleCell.xib in Resources */,
 				AA24528B18BC9949001F407F /* InfoPlist.strings in Resources */,
+				AA7A459818BC9B920083DED5 /* ExampleController.xib in Resources */,
 				AA24529318BC9949001F407F /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -262,8 +299,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA7A459D18BC9C2E0083DED5 /* ExampleCell.m in Sources */,
 				AA24529118BC9949001F407F /* AppDelegate.m in Sources */,
+				AA7A459718BC9B920083DED5 /* ExampleController.m in Sources */,
 				AA24528D18BC9949001F407F /* main.m in Sources */,
+				C163E81BC17847AD3D58047B /* DTInlinePickerCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -466,6 +506,7 @@
 				AA2452AB18BC9949001F407F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AA2452AC18BC9949001F407F /* Build configuration list for PBXNativeTarget "DTInlinePickerViewsTests" */ = {
 			isa = XCConfigurationList;
@@ -474,6 +515,7 @@
 				AA2452AE18BC9949001F407F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
