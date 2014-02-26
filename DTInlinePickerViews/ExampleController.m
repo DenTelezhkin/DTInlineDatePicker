@@ -19,16 +19,26 @@
 
     [self registerCellClass:[ExampleCell class] forModelClass:[NSString class]];
     [self registerCellClass:[ExampleCell class] forModelClass:[DateModel class]];
-    [self.memoryStorage addItems:@[@"foo", [DateModel modelWithDate:[NSDate date]], @"bar"]];
+    [self.memoryStorage addItems:@[@"foo", [DateModel modelWithDate:[NSDate date]],[DateModel modelWithDate:[NSDate date]], @"bar"]];
     
-    __weak typeof (self) weakSelf = self;
     NSIndexPath * indexPath =[NSIndexPath indexPathForRow:1 inSection:0];
-    DTDatePickerPresenter * presenter = [DTDatePickerPresenter presenterWithChangeBlock:^(NSDate * selectedDate)
-                                         {
-                                             [weakSelf updateDateCellWithDate:selectedDate
-                                                                   aIndexPath:indexPath];
-                                         }];
+    DTDatePickerPresenter * presenter = [DTDatePickerPresenter presenterWithChangeBlock:[self changeBlockForIndexPath:indexPath]];
+    
+    NSIndexPath * indexPath2 =[NSIndexPath indexPathForRow:2 inSection:0];
+    DTDatePickerPresenter * presenter2 = [DTDatePickerPresenter presenterWithChangeBlock:[self changeBlockForIndexPath:indexPath2]];
+    
     [self attachInlinePickerPresenter:presenter toIndexPath:indexPath];
+    [self attachInlinePickerPresenter:presenter2 toIndexPath:indexPath2];
+}
+
+-(DTDatePickerChangeBlock)changeBlockForIndexPath:(NSIndexPath * )indexPath
+{
+    __weak typeof (self) weakSelf = self;
+    return ^(NSDate * selectedDate)
+    {
+        [weakSelf updateDateCellWithDate:selectedDate
+                              aIndexPath:indexPath];
+    };
 }
 
 -(void)updateDateCellWithDate:(NSDate *)date aIndexPath:(NSIndexPath * )indexPath
@@ -42,8 +52,13 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    [super tableView:tableView didSelectRowAtIndexPath:indexPath];
     [tableView deselectRowAtIndexPath:indexPath animated:NO];
+    
+    /**
+     It's important to call super after deselection, cause super call may cause picker cells to be deleted,
+     thus changing indexPath of the cell, that needs to be deselected
+     */
+    [super tableView:tableView didSelectRowAtIndexPath:indexPath];
 }
 
 - (void)didShowPickerForIndexPath:(NSIndexPath *)indexPath
@@ -55,7 +70,6 @@
 - (void)didHidePickerForIndexPath:(NSIndexPath *)indexPath
 {
     ExampleCell * cell = (ExampleCell *)[self.tableView cellForRowAtIndexPath:indexPath];
-
     cell.selected = NO;
 }
 

@@ -85,6 +85,17 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    if (self.pickerIndexPath)
+    {
+        if (self.pickerIndexPath.section == indexPath.section)
+        {
+            if (self.pickerIndexPath.row<indexPath.row)
+            {
+                indexPath = [NSIndexPath indexPathForRow:indexPath.row-1
+                                               inSection:indexPath.section];
+            }
+        }
+    }
     if (self.inlinePickers[indexPath])
     {
         if ([self.pickerIndexPath isEqual:indexPath])
@@ -93,6 +104,10 @@
         }
         else
         {
+            if (self.pickerIndexPath)
+            {
+                [self removePickerFromIndexPath:self.pickerIndexPath];
+            }
             [self insertPickerForIndexPath:indexPath];
         }
     }
