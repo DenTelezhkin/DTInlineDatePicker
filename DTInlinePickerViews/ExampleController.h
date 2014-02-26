@@ -6,8 +6,8 @@
 //  Copyright (c) 2014 MLSDev. All rights reserved.
 //
 
-#import "DTTableViewController.h"
+#import "DTInlinePickerTableController.h"
 
-@interface ExampleController : DTTableViewController
+@interface ExampleController : DTInlinePickerTableController
 
 @end

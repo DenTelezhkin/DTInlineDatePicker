@@ -6,15 +6,10 @@
 //  Copyright (c) 2014 MLSDev. All rights reserved.
 //
 
-#import <DTPickerPresenter/DTPickerViewPresenter.h>
 #import <DTPickerPresenter/DTDatePickerPresenter.h>
 #import "ExampleController.h"
 #import "ExampleCell.h"
-#import "DTInlinePickerCell.h"
-
-@interface ExampleController ()
-@property (nonatomic, strong) NSIndexPath * pickerIndexPath;
-@end
+#import "DateModel.h"
 
 @implementation ExampleController
 
@@ -23,63 +18,45 @@
     [super viewDidLoad];
 
     [self registerCellClass:[ExampleCell class] forModelClass:[NSString class]];
-    [self registerCellClass:[ExampleCell class] forModelClass:[NSDate class]];
-    [self registerCellClass:[DTInlinePickerCell class] forModelClass:[DTPickerViewPresenter class]];
-    [self registerCellClass:[DTInlinePickerCell class] forModelClass:[DTDatePickerPresenter class]];
-    [self.memoryStorage addItems:@[@"foo", [NSDate date], @"bar"]];
+    [self registerCellClass:[ExampleCell class] forModelClass:[DateModel class]];
+    [self.memoryStorage addItems:@[@"foo", [DateModel modelWithDate:[NSDate date]], @"bar"]];
+    
+    __weak typeof (self) weakSelf = self;
+    NSIndexPath * indexPath =[NSIndexPath indexPathForRow:1 inSection:0];
+    DTDatePickerPresenter * presenter = [DTDatePickerPresenter presenterWithChangeBlock:^(NSDate * selectedDate)
+                                         {
+                                             [weakSelf updateDateCellWithDate:selectedDate
+                                                                   aIndexPath:indexPath];
+                                         }];
+    [self attachInlinePickerPresenter:presenter toIndexPath:indexPath];
+}
+
+-(void)updateDateCellWithDate:(NSDate *)date aIndexPath:(NSIndexPath * )indexPath
+{
+    DateModel * model = [self.memoryStorage objectAtIndexPath:indexPath];
+    model.date = date;
+
+    UITableViewCell<DTModelTransfer> * cell = (UITableViewCell <DTModelTransfer> *)[self.tableView cellForRowAtIndexPath:indexPath];
+    [cell updateWithModel:model];
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    [super tableView:tableView didSelectRowAtIndexPath:indexPath];
     [tableView deselectRowAtIndexPath:indexPath animated:NO];
-    UITableViewCell * cell = [tableView cellForRowAtIndexPath:indexPath];
-    if ([cell isKindOfClass:[ExampleCell class]])
-    {
-        if ([self.pickerIndexPath isEqual:indexPath])
-        {
-            [self removePickerFromIndexPath:indexPath];
-        }
-        else {
-            [self insertPickerForIndexPath:indexPath];
-        }
-
-    }
 }
 
-- (void)insertPickerForIndexPath:(NSIndexPath *)indexPath
+- (void)didShowPickerForIndexPath:(NSIndexPath *)indexPath
 {
-    id model = [self.memoryStorage objectAtIndexPath:indexPath];
-    if ([model isKindOfClass:[NSDate class]])
-    {
-        __weak typeof (self) weakSelf = self;
-        DTDatePickerPresenter * presenter = [DTDatePickerPresenter presenterWithChangeBlock:^(NSDate * selectedDate)
-        {
-            [weakSelf.memoryStorage replaceItem:[weakSelf.memoryStorage itemAtIndexPath:indexPath]
-                                       withItem:selectedDate];
-        }];
-        [self.memoryStorage insertItem:presenter toIndexPath:[NSIndexPath indexPathForRow:indexPath.row + 1
-                                                                                inSection:indexPath.section]];
-        self.pickerIndexPath = indexPath;
-    }
-
+    ExampleCell * cell = (ExampleCell *)[self.tableView cellForRowAtIndexPath:indexPath];
+    cell.selected = YES;
 }
 
-- (void)removePickerFromIndexPath:(NSIndexPath *)indexPath
+- (void)didHidePickerForIndexPath:(NSIndexPath *)indexPath
 {
-    NSIndexPath * pickerIndexPath = [NSIndexPath indexPathForRow:indexPath.row+1 inSection:indexPath.section];
-    [self.memoryStorage removeItem:[self.memoryStorage objectAtIndexPath:pickerIndexPath]];
-    self.pickerIndexPath = nil;
-}
+    ExampleCell * cell = (ExampleCell *)[self.tableView cellForRowAtIndexPath:indexPath];
 
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    id model = [self.memoryStorage objectAtIndexPath:indexPath];
-    if ([model isKindOfClass:[DTDatePickerPresenter class]] || [model isKindOfClass:[DTPickerViewPresenter class]])
-    {
-        return 216.0f;
-    }
-
-    return self.tableView.rowHeight;
+    cell.selected = NO;
 }
 
 @end

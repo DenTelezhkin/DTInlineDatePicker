@@ -15,4 +15,15 @@
     self.exampleLabel.text = [model description];
 }
 
+- (void)setSelected:(BOOL)selected
+{
+    if (selected)
+    {
+        self.exampleLabel.textColor = [UIColor redColor];
+    }
+    else {
+        self.exampleLabel.textColor = [UIColor blackColor];
+    }
+}
+
 @end

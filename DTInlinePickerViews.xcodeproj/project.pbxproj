@@ -19,6 +19,8 @@
 		AA7A459D18BC9C2E0083DED5 /* ExampleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AA7A459C18BC9C2E0083DED5 /* ExampleCell.m */; };
 		AA7A459F18BC9C3E0083DED5 /* ExampleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA7A459E18BC9C3E0083DED5 /* ExampleCell.xib */; };
 		C163E81BC17847AD3D58047B /* DTInlinePickerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C163EDB8ED01460E113E410C /* DTInlinePickerCell.m */; };
+		C163EA1EC61FCDD638DE2CCA /* DTInlinePickerTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = C163EA5A14276A7FF6627BCA /* DTInlinePickerTableController.m */; };
+		C163EFFC72BD842C467B62F2 /* DateModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C163E767A5F2DB9825E1FD8F /* DateModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,7 +54,11 @@
 		AA7A459C18BC9C2E0083DED5 /* ExampleCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ExampleCell.m; path = Cells/ExampleCell.m; sourceTree = "<group>"; };
 		AA7A459E18BC9C3E0083DED5 /* ExampleCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ExampleCell.xib; path = Cells/ExampleCell.xib; sourceTree = "<group>"; };
 		C163E0D37415109B547969C4 /* DTInlinePickerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DTInlinePickerCell.h; path = Cells/DTInlinePickerCell.h; sourceTree = "<group>"; };
+		C163E2CF4A427468CCE4FCA9 /* DTInlinePickerTableController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTInlinePickerTableController.h; sourceTree = "<group>"; };
+		C163E767A5F2DB9825E1FD8F /* DateModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DateModel.m; sourceTree = "<group>"; };
+		C163EA5A14276A7FF6627BCA /* DTInlinePickerTableController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTInlinePickerTableController.m; sourceTree = "<group>"; };
 		C163EDB8ED01460E113E410C /* DTInlinePickerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DTInlinePickerCell.m; path = Cells/DTInlinePickerCell.m; sourceTree = "<group>"; };
+		C163EF02944677F0BBB3AB8C /* DateModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DateModel.h; sourceTree = "<group>"; };
 		DC6AEFEB12EC4C51A87EEE1F /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -104,6 +110,8 @@
 				AA24529018BC9949001F407F /* AppDelegate.m */,
 				AA24529218BC9949001F407F /* Images.xcassets */,
 				AA24528718BC9949001F407F /* Supporting Files */,
+				C163E767A5F2DB9825E1FD8F /* DateModel.m */,
+				C163EF02944677F0BBB3AB8C /* DateModel.h */,
 			);
 			path = DTInlinePickerViews;
 			sourceTree = "<group>";
@@ -143,6 +151,8 @@
 				AA7A459418BC9B920083DED5 /* ExampleController.h */,
 				AA7A459518BC9B920083DED5 /* ExampleController.m */,
 				AA7A459618BC9B920083DED5 /* ExampleController.xib */,
+				C163E2CF4A427468CCE4FCA9 /* DTInlinePickerTableController.h */,
+				C163EA5A14276A7FF6627BCA /* DTInlinePickerTableController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -304,6 +314,8 @@
 				AA7A459718BC9B920083DED5 /* ExampleController.m in Sources */,
 				AA24528D18BC9949001F407F /* main.m in Sources */,
 				C163E81BC17847AD3D58047B /* DTInlinePickerCell.m in Sources */,
+				C163EA1EC61FCDD638DE2CCA /* DTInlinePickerTableController.m in Sources */,
+				C163EFFC72BD842C467B62F2 /* DateModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
