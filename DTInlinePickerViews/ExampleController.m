@@ -6,7 +6,7 @@
 //  Copyright (c) 2014 MLSDev. All rights reserved.
 //
 
-#import <DTPickerPresenter/DTDatePickerPresenter.h>
+#import "DTPickerPresenter.h"
 #import "ExampleController.h"
 #import "ExampleCell.h"
 #import "DateModel.h"
@@ -19,19 +19,24 @@
 
     [self registerCellClass:[ExampleCell class] forModelClass:[NSString class]];
     [self registerCellClass:[ExampleCell class] forModelClass:[DateModel class]];
-    [self.memoryStorage addItems:@[@"foo", [DateModel modelWithDate:[NSDate date]],[DateModel modelWithDate:[NSDate date]], @"bar"]];
+    [self.memoryStorage addItems:@[
+                                   @"foo",
+                                   [DateModel modelWithDate:[NSDate date]],
+                                   [DateModel modelWithDate:[NSDate date]],
+                                   @"bar"]
+     ];
     
     NSIndexPath * indexPath =[NSIndexPath indexPathForRow:1 inSection:0];
-    DTDatePickerPresenter * presenter = [DTDatePickerPresenter presenterWithChangeBlock:[self changeBlockForIndexPath:indexPath]];
+    DTDatePickerPresenter * presenter = [DTDatePickerPresenter presenterWithChangeBlock:[self dateChangeBlockForIndexPath:indexPath]];
     
     NSIndexPath * indexPath2 =[NSIndexPath indexPathForRow:2 inSection:0];
-    DTDatePickerPresenter * presenter2 = [DTDatePickerPresenter presenterWithChangeBlock:[self changeBlockForIndexPath:indexPath2]];
+    DTDatePickerPresenter * presenter2 = [DTDatePickerPresenter presenterWithChangeBlock:[self dateChangeBlockForIndexPath:indexPath2]];
     
     [self attachInlinePickerPresenter:presenter toIndexPath:indexPath];
     [self attachInlinePickerPresenter:presenter2 toIndexPath:indexPath2];
 }
 
--(DTDatePickerChangeBlock)changeBlockForIndexPath:(NSIndexPath * )indexPath
+-(DTDatePickerChangeBlock)dateChangeBlockForIndexPath:(NSIndexPath * )indexPath
 {
     __weak typeof (self) weakSelf = self;
     return ^(NSDate * selectedDate)
@@ -40,6 +45,7 @@
                               aIndexPath:indexPath];
     };
 }
+
 
 -(void)updateDateCellWithDate:(NSDate *)date aIndexPath:(NSIndexPath * )indexPath
 {

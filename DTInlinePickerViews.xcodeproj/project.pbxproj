@@ -104,14 +104,13 @@
 		AA24528618BC9949001F407F /* DTInlinePickerViews */ = {
 			isa = PBXGroup;
 			children = (
+				AAE60DD418BE430200DD2DED /* Models */,
 				AA7A459A18BC9C0E0083DED5 /* Cells */,
 				AA7A459918BC9C070083DED5 /* Controllers */,
 				AA24528F18BC9949001F407F /* AppDelegate.h */,
 				AA24529018BC9949001F407F /* AppDelegate.m */,
 				AA24529218BC9949001F407F /* Images.xcassets */,
 				AA24528718BC9949001F407F /* Supporting Files */,
-				C163E767A5F2DB9825E1FD8F /* DateModel.m */,
-				C163EF02944677F0BBB3AB8C /* DateModel.h */,
 			);
 			path = DTInlinePickerViews;
 			sourceTree = "<group>";
@@ -167,6 +166,15 @@
 				C163E0D37415109B547969C4 /* DTInlinePickerCell.h */,
 			);
 			name = Cells;
+			sourceTree = "<group>";
+		};
+		AAE60DD418BE430200DD2DED /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C163EF02944677F0BBB3AB8C /* DateModel.h */,
+				C163E767A5F2DB9825E1FD8F /* DateModel.m */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 		D95BA626A51845EE9611C382 /* Frameworks */ = {

@@ -5,11 +5,7 @@
 
 #import "DateModel.h"
 
-
 @implementation DateModel
-{
-
-}
 
 + (instancetype)modelWithDate:(NSDate *)date
 {
