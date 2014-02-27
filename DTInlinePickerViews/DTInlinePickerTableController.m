@@ -17,6 +17,8 @@
 
 @implementation DTInlinePickerTableController
 
+#pragma mark - getters
+
 - (NSMutableDictionary *)inlinePickers
 {
     if (!_inlinePickers)
@@ -26,12 +28,16 @@
     return _inlinePickers;
 }
 
+#pragma mark - view lifecycle
+
 -(void)viewDidLoad
 {
     [super viewDidLoad];
 
     [self registerCellClass:[DTInlinePickerCell class] forModelClass:[DTDatePickerPresenter class]];
 }
+
+#pragma mark - attaching pickers
 
 - (void)attachInlinePickerPresenter:(id)presenter toIndexPath:(NSIndexPath *)indexPath
 {
@@ -47,6 +53,8 @@
 
     [self.inlinePickers removeObjectForKey:indexPath];
 }
+
+#pragma mark - notifications
 
 - (void)didShowPickerForIndexPath:(NSIndexPath *)indexPath
 {
@@ -111,6 +119,8 @@
         }
     }
 }
+
+#pragma mark - adding and removing picker
 
 - (void)insertPickerForIndexPath:(NSIndexPath *)indexPath
 {

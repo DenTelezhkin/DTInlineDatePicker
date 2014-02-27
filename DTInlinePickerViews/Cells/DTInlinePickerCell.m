@@ -6,26 +6,16 @@
 #import "DTInlinePickerCell.h"
 #import "DTPickerPresenter.h"
 
-@interface DTInlinePickerCell()
-@property (nonatomic, strong) UIView * pickerView;
-@end
-
 @implementation DTInlinePickerCell
 
 - (void)updateWithModel:(id)model
 {
-    if ([model isKindOfClass:[DTPickerViewPresenter class]])
-    {
-        DTPickerViewPresenter * presenter = model;
-        self.pickerView = presenter.pickerView;
-    }
     if ([model isKindOfClass:[DTDatePickerPresenter class]])
     {
         DTDatePickerPresenter * presenter = model;
         self.pickerView = presenter.datePicker;
+        [self.contentView addSubview:self.pickerView];
     }
-
-    [self.contentView addSubview:self.pickerView];
 }
 
 - (void)prepareForReuse

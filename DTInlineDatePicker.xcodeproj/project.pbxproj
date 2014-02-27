@@ -35,16 +35,16 @@
 
 /* Begin PBXFileReference section */
 		28277E0EDE90454EBB573325 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
-		AA24527D18BC9949001F407F /* DTInlinePickerViews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DTInlinePickerViews.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		AA24528818BC9949001F407F /* DTInlinePickerViews-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DTInlinePickerViews-Info.plist"; sourceTree = "<group>"; };
+		AA24527D18BC9949001F407F /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA24528818BC9949001F407F /* DTInlineDatePicker-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DTInlineDatePicker-Info.plist"; sourceTree = "<group>"; };
 		AA24528A18BC9949001F407F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		AA24528C18BC9949001F407F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		AA24528E18BC9949001F407F /* DTInlinePickerViews-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DTInlinePickerViews-Prefix.pch"; sourceTree = "<group>"; };
+		AA24528E18BC9949001F407F /* DTInlineDatePicker-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DTInlineDatePicker-Prefix.pch"; sourceTree = "<group>"; };
 		AA24528F18BC9949001F407F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		AA24529018BC9949001F407F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		AA24529218BC9949001F407F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		AA24529818BC9949001F407F /* DTInlinePickerViewsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DTInlinePickerViewsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		AA2452A118BC9949001F407F /* DTInlinePickerViewsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DTInlinePickerViewsTests-Info.plist"; sourceTree = "<group>"; };
+		AA24529818BC9949001F407F /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA2452A118BC9949001F407F /* DTInlineDatePickerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DTInlineDatePickerTests-Info.plist"; sourceTree = "<group>"; };
 		AA2452A318BC9949001F407F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		AA2452A518BC9949001F407F /* DTInlinePickerViewsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DTInlinePickerViewsTests.m; sourceTree = "<group>"; };
 		AA7A459418BC9B920083DED5 /* ExampleController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExampleController.h; sourceTree = "<group>"; };
@@ -53,11 +53,11 @@
 		AA7A459B18BC9C2E0083DED5 /* ExampleCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ExampleCell.h; path = Cells/ExampleCell.h; sourceTree = "<group>"; };
 		AA7A459C18BC9C2E0083DED5 /* ExampleCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ExampleCell.m; path = Cells/ExampleCell.m; sourceTree = "<group>"; };
 		AA7A459E18BC9C3E0083DED5 /* ExampleCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ExampleCell.xib; path = Cells/ExampleCell.xib; sourceTree = "<group>"; };
-		C163E0D37415109B547969C4 /* DTInlinePickerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DTInlinePickerCell.h; path = Cells/DTInlinePickerCell.h; sourceTree = "<group>"; };
-		C163E2CF4A427468CCE4FCA9 /* DTInlinePickerTableController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTInlinePickerTableController.h; sourceTree = "<group>"; };
+		C163E0D37415109B547969C4 /* DTInlinePickerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DTInlinePickerCell.h; path = DTInlinePickerViews/Cells/DTInlinePickerCell.h; sourceTree = "<group>"; };
+		C163E2CF4A427468CCE4FCA9 /* DTInlinePickerTableController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DTInlinePickerTableController.h; path = DTInlinePickerViews/DTInlinePickerTableController.h; sourceTree = "<group>"; };
 		C163E767A5F2DB9825E1FD8F /* DateModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DateModel.m; sourceTree = "<group>"; };
-		C163EA5A14276A7FF6627BCA /* DTInlinePickerTableController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTInlinePickerTableController.m; sourceTree = "<group>"; };
-		C163EDB8ED01460E113E410C /* DTInlinePickerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DTInlinePickerCell.m; path = Cells/DTInlinePickerCell.m; sourceTree = "<group>"; };
+		C163EA5A14276A7FF6627BCA /* DTInlinePickerTableController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DTInlinePickerTableController.m; path = DTInlinePickerViews/DTInlinePickerTableController.m; sourceTree = "<group>"; };
+		C163EDB8ED01460E113E410C /* DTInlinePickerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DTInlinePickerCell.m; path = DTInlinePickerViews/Cells/DTInlinePickerCell.m; sourceTree = "<group>"; };
 		C163EF02944677F0BBB3AB8C /* DateModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DateModel.h; sourceTree = "<group>"; };
 		DC6AEFEB12EC4C51A87EEE1F /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -84,8 +84,9 @@
 		AA24527418BC9949001F407F = {
 			isa = PBXGroup;
 			children = (
-				AA24528618BC9949001F407F /* DTInlinePickerViews */,
-				AA24529F18BC9949001F407F /* DTInlinePickerViewsTests */,
+				AA56916218BF401B006D1B45 /* DTInlineDatePicker */,
+				AA24528618BC9949001F407F /* Example */,
+				AA24529F18BC9949001F407F /* Tests */,
 				AA24527E18BC9949001F407F /* Products */,
 				28277E0EDE90454EBB573325 /* Pods.xcconfig */,
 				D95BA626A51845EE9611C382 /* Frameworks */,
@@ -95,13 +96,13 @@
 		AA24527E18BC9949001F407F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				AA24527D18BC9949001F407F /* DTInlinePickerViews.app */,
-				AA24529818BC9949001F407F /* DTInlinePickerViewsTests.xctest */,
+				AA24527D18BC9949001F407F /* Example.app */,
+				AA24529818BC9949001F407F /* Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		AA24528618BC9949001F407F /* DTInlinePickerViews */ = {
+		AA24528618BC9949001F407F /* Example */ = {
 			isa = PBXGroup;
 			children = (
 				AAE60DD418BE430200DD2DED /* Models */,
@@ -112,36 +113,49 @@
 				AA24529218BC9949001F407F /* Images.xcassets */,
 				AA24528718BC9949001F407F /* Supporting Files */,
 			);
+			name = Example;
 			path = DTInlinePickerViews;
 			sourceTree = "<group>";
 		};
 		AA24528718BC9949001F407F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				AA24528818BC9949001F407F /* DTInlinePickerViews-Info.plist */,
+				AA24528818BC9949001F407F /* DTInlineDatePicker-Info.plist */,
 				AA24528918BC9949001F407F /* InfoPlist.strings */,
 				AA24528C18BC9949001F407F /* main.m */,
-				AA24528E18BC9949001F407F /* DTInlinePickerViews-Prefix.pch */,
+				AA24528E18BC9949001F407F /* DTInlineDatePicker-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		AA24529F18BC9949001F407F /* DTInlinePickerViewsTests */ = {
+		AA24529F18BC9949001F407F /* Tests */ = {
 			isa = PBXGroup;
 			children = (
 				AA2452A518BC9949001F407F /* DTInlinePickerViewsTests.m */,
 				AA2452A018BC9949001F407F /* Supporting Files */,
 			);
+			name = Tests;
 			path = DTInlinePickerViewsTests;
 			sourceTree = "<group>";
 		};
 		AA2452A018BC9949001F407F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				AA2452A118BC9949001F407F /* DTInlinePickerViewsTests-Info.plist */,
+				AA2452A118BC9949001F407F /* DTInlineDatePickerTests-Info.plist */,
 				AA2452A218BC9949001F407F /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AA56916218BF401B006D1B45 /* DTInlineDatePicker */ = {
+			isa = PBXGroup;
+			children = (
+				C163E0D37415109B547969C4 /* DTInlinePickerCell.h */,
+				C163EDB8ED01460E113E410C /* DTInlinePickerCell.m */,
+				C163E2CF4A427468CCE4FCA9 /* DTInlinePickerTableController.h */,
+				C163EA5A14276A7FF6627BCA /* DTInlinePickerTableController.m */,
+			);
+			name = DTInlineDatePicker;
 			sourceTree = "<group>";
 		};
 		AA7A459918BC9C070083DED5 /* Controllers */ = {
@@ -150,8 +164,6 @@
 				AA7A459418BC9B920083DED5 /* ExampleController.h */,
 				AA7A459518BC9B920083DED5 /* ExampleController.m */,
 				AA7A459618BC9B920083DED5 /* ExampleController.xib */,
-				C163E2CF4A427468CCE4FCA9 /* DTInlinePickerTableController.h */,
-				C163EA5A14276A7FF6627BCA /* DTInlinePickerTableController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -162,8 +174,6 @@
 				AA7A459B18BC9C2E0083DED5 /* ExampleCell.h */,
 				AA7A459C18BC9C2E0083DED5 /* ExampleCell.m */,
 				AA7A459E18BC9C3E0083DED5 /* ExampleCell.xib */,
-				C163EDB8ED01460E113E410C /* DTInlinePickerCell.m */,
-				C163E0D37415109B547969C4 /* DTInlinePickerCell.h */,
 			);
 			name = Cells;
 			sourceTree = "<group>";
@@ -188,9 +198,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		AA24527C18BC9949001F407F /* DTInlinePickerViews */ = {
+		AA24527C18BC9949001F407F /* Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AA2452A918BC9949001F407F /* Build configuration list for PBXNativeTarget "DTInlinePickerViews" */;
+			buildConfigurationList = AA2452A918BC9949001F407F /* Build configuration list for PBXNativeTarget "Example" */;
 			buildPhases = (
 				D508F02E0CD949C4AD31F1F1 /* Check Pods Manifest.lock */,
 				AA24527918BC9949001F407F /* Sources */,
@@ -202,14 +212,14 @@
 			);
 			dependencies = (
 			);
-			name = DTInlinePickerViews;
+			name = Example;
 			productName = DTInlinePickerViews;
-			productReference = AA24527D18BC9949001F407F /* DTInlinePickerViews.app */;
+			productReference = AA24527D18BC9949001F407F /* Example.app */;
 			productType = "com.apple.product-type.application";
 		};
-		AA24529718BC9949001F407F /* DTInlinePickerViewsTests */ = {
+		AA24529718BC9949001F407F /* Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AA2452AC18BC9949001F407F /* Build configuration list for PBXNativeTarget "DTInlinePickerViewsTests" */;
+			buildConfigurationList = AA2452AC18BC9949001F407F /* Build configuration list for PBXNativeTarget "Tests" */;
 			buildPhases = (
 				AA24529418BC9949001F407F /* Sources */,
 				AA24529518BC9949001F407F /* Frameworks */,
@@ -220,9 +230,9 @@
 			dependencies = (
 				AA24529E18BC9949001F407F /* PBXTargetDependency */,
 			);
-			name = DTInlinePickerViewsTests;
+			name = Tests;
 			productName = DTInlinePickerViewsTests;
-			productReference = AA24529818BC9949001F407F /* DTInlinePickerViewsTests.xctest */;
+			productReference = AA24529818BC9949001F407F /* Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -239,7 +249,7 @@
 					};
 				};
 			};
-			buildConfigurationList = AA24527818BC9949001F407F /* Build configuration list for PBXProject "DTInlinePickerViews" */;
+			buildConfigurationList = AA24527818BC9949001F407F /* Build configuration list for PBXProject "DTInlineDatePicker" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -251,8 +261,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				AA24527C18BC9949001F407F /* DTInlinePickerViews */,
-				AA24529718BC9949001F407F /* DTInlinePickerViewsTests */,
+				AA24527C18BC9949001F407F /* Example */,
+				AA24529718BC9949001F407F /* Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -340,7 +350,7 @@
 /* Begin PBXTargetDependency section */
 		AA24529E18BC9949001F407F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = AA24527C18BC9949001F407F /* DTInlinePickerViews */;
+			target = AA24527C18BC9949001F407F /* Example */;
 			targetProxy = AA24529D18BC9949001F407F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -444,8 +454,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "DTInlinePickerViews/DTInlinePickerViews-Prefix.pch";
-				INFOPLIST_FILE = "DTInlinePickerViews/DTInlinePickerViews-Info.plist";
+				GCC_PREFIX_HEADER = "DTInlinePickerViews/DTInlineDatePicker-Prefix.pch";
+				INFOPLIST_FILE = "DTInlinePickerViews/DTInlineDatePicker-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -459,8 +469,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "DTInlinePickerViews/DTInlinePickerViews-Prefix.pch";
-				INFOPLIST_FILE = "DTInlinePickerViews/DTInlinePickerViews-Info.plist";
+				GCC_PREFIX_HEADER = "DTInlinePickerViews/DTInlineDatePicker-Prefix.pch";
+				INFOPLIST_FILE = "DTInlinePickerViews/DTInlineDatePicker-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -483,7 +493,7 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "DTInlinePickerViewsTests/DTInlinePickerViewsTests-Info.plist";
+				INFOPLIST_FILE = "DTInlinePickerViewsTests/DTInlineDatePickerTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
@@ -502,7 +512,7 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DTInlinePickerViews/DTInlinePickerViews-Prefix.pch";
-				INFOPLIST_FILE = "DTInlinePickerViewsTests/DTInlinePickerViewsTests-Info.plist";
+				INFOPLIST_FILE = "DTInlinePickerViewsTests/DTInlineDatePickerTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
@@ -512,7 +522,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		AA24527818BC9949001F407F /* Build configuration list for PBXProject "DTInlinePickerViews" */ = {
+		AA24527818BC9949001F407F /* Build configuration list for PBXProject "DTInlineDatePicker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AA2452A718BC9949001F407F /* Debug */,
@@ -521,7 +531,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AA2452A918BC9949001F407F /* Build configuration list for PBXNativeTarget "DTInlinePickerViews" */ = {
+		AA2452A918BC9949001F407F /* Build configuration list for PBXNativeTarget "Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AA2452AA18BC9949001F407F /* Debug */,
@@ -530,7 +540,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AA2452AC18BC9949001F407F /* Build configuration list for PBXNativeTarget "DTInlinePickerViewsTests" */ = {
+		AA2452AC18BC9949001F407F /* Build configuration list for PBXNativeTarget "Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AA2452AD18BC9949001F407F /* Debug */,

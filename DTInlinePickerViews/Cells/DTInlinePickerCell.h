@@ -7,4 +7,7 @@
 #import "DTTableViewCell.h"
 
 @interface DTInlinePickerCell : DTTableViewCell
+
+@property (nonatomic, strong) UIDatePicker * pickerView;
+
 @end
