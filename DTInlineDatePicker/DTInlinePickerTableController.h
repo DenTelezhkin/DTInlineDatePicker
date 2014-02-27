@@ -7,6 +7,7 @@
 //
 
 #import "DTTableViewController.h"
+#import "DTDatePickerPresenter.h"
 
 /**
  DTInlinePickerTableController allows easily attach inline date picker behaviour to any UITableViewCell. It requires using DTTableViewManager and DTPickerPresenter libraries to work.
