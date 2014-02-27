@@ -30,7 +30,6 @@
 {
     [super viewDidLoad];
 
-    [self registerCellClass:[DTInlinePickerCell class] forModelClass:[DTPickerViewPresenter class]];
     [self registerCellClass:[DTInlinePickerCell class] forModelClass:[DTDatePickerPresenter class]];
 }
 
@@ -64,7 +63,7 @@
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     id model = [self.memoryStorage objectAtIndexPath:indexPath];
-    if ([model isKindOfClass:[DTDatePickerPresenter class]] || [model isKindOfClass:[DTPickerViewPresenter class]])
+    if ([model isKindOfClass:[DTDatePickerPresenter class]])
     {
         return 216.0f;
     }
@@ -75,7 +74,7 @@
 - (CGFloat)tableView:(UITableView *)tableView estimatedHeightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     id model = [self.memoryStorage objectAtIndexPath:indexPath];
-    if ([model isKindOfClass:[DTDatePickerPresenter class]] || [model isKindOfClass:[DTPickerViewPresenter class]])
+    if ([model isKindOfClass:[DTDatePickerPresenter class]])
     {
         return 216.0f;
     }
