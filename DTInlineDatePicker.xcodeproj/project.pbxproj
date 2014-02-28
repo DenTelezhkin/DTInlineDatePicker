@@ -113,8 +113,7 @@
 				AA24529218BC9949001F407F /* Images.xcassets */,
 				AA24528718BC9949001F407F /* Supporting Files */,
 			);
-			name = Example;
-			path = DTInlinePickerViews;
+			path = Example;
 			sourceTree = "<group>";
 		};
 		AA24528718BC9949001F407F /* Supporting Files */ = {
@@ -134,8 +133,7 @@
 				AA2452A518BC9949001F407F /* DTInlinePickerViewsTests.m */,
 				AA2452A018BC9949001F407F /* Supporting Files */,
 			);
-			name = Tests;
-			path = DTInlinePickerViewsTests;
+			path = Tests;
 			sourceTree = "<group>";
 		};
 		AA2452A018BC9949001F407F /* Supporting Files */ = {
@@ -454,8 +452,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "DTInlinePickerViews/DTInlineDatePicker-Prefix.pch";
-				INFOPLIST_FILE = "DTInlinePickerViews/DTInlineDatePicker-Info.plist";
+				GCC_PREFIX_HEADER = "Example/DTInlineDatePicker-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/Example/DTInlineDatePicker-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -469,8 +467,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "DTInlinePickerViews/DTInlineDatePicker-Prefix.pch";
-				INFOPLIST_FILE = "DTInlinePickerViews/DTInlineDatePicker-Info.plist";
+				GCC_PREFIX_HEADER = "Example/DTInlineDatePicker-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/Example/DTInlineDatePicker-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -481,7 +479,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DTInlinePickerViews.app/DTInlinePickerViews";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Example.app/Example";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -504,7 +502,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DTInlinePickerViews.app/DTInlinePickerViews";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Example.app/Example";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
