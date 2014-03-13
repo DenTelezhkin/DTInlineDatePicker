@@ -1,3 +1,5 @@
+![CocoaPod platform](https://cocoapod-badges.herokuapp.com/p/DTInlineDatePicker/badge.png) &nbsp; 
+![CocoaPod version](https://cocoapod-badges.herokuapp.com/v/DTInlineDatePicker/badge.png) &nbsp; 
 ![License MIT](https://go-shields.herokuapp.com/license-MIT-blue.png)
 
 DTInlineDatePicker
