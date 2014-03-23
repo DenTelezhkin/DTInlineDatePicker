@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name     = 'DTInlineDatePicker'
-  s.version  = '0.1.2'
+  s.version  = '0.1.3'
   s.license  = 'MIT'
   s.summary  = 'Display UIDatePicker inline easily!'
   s.homepage = 'https://github.com/DenHeadless/DTInlineDatePicker'
@@ -12,6 +12,6 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '6.0'
   s.ios.frameworks = 'UIKit', 'Foundation'
   s.platform = :ios,'6.0'
-  s.dependency 'DTTableViewManager', '2.2.2'
-  s.dependency 'DTPickerPresenter', '0.1.1'
+  s.dependency 'DTTableViewManager', '~> 2.3'
+  s.dependency 'DTPickerPresenter', '~> 0.1'
 end

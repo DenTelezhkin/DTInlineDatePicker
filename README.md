@@ -54,5 +54,5 @@ in project directory.
 
 Install using Cocoapods,
 
-    pod 'DTInlineDatePicker', '~> 0.1.2'
+    pod 'DTInlineDatePicker', '~> 0.1'
 
