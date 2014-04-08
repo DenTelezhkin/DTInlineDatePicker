@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name     = 'DTInlineDatePicker'
-  s.version  = '0.1.3'
+  s.version  = '0.1.4'
   s.license  = 'MIT'
   s.summary  = 'Display UIDatePicker inline easily!'
   s.homepage = 'https://github.com/DenHeadless/DTInlineDatePicker'
