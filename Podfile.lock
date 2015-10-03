@@ -1,26 +1,26 @@
 PODS:
-  - DTModelStorage (1.1.1):
-    - DTModelStorage/All (= 1.1.1)
-  - DTModelStorage/All (1.1.1):
+  - DTModelStorage (1.3.2):
+    - DTModelStorage/All (= 1.3.2)
+  - DTModelStorage/All (1.3.2):
     - DTModelStorage/Core
     - DTModelStorage/CoreDataStorage
     - DTModelStorage/MemoryStorage
-  - DTModelStorage/Core (1.1.1)
-  - DTModelStorage/CoreDataStorage (1.1.1):
+  - DTModelStorage/Core (1.3.2)
+  - DTModelStorage/CoreDataStorage (1.3.2):
     - DTModelStorage/Core
-  - DTModelStorage/MemoryStorage (1.1.1):
+  - DTModelStorage/MemoryStorage (1.3.2):
     - DTModelStorage/Core
   - DTPickerPresenter (0.2.0)
-  - DTTableViewManager (3.0.1):
-    - DTModelStorage (~> 1.1.1)
+  - DTTableViewManager (3.2.0):
+    - DTModelStorage (~> 1.3.1)
 
 DEPENDENCIES:
   - DTPickerPresenter (~> 0.1)
   - DTTableViewManager (~> 3.0)
 
 SPEC CHECKSUMS:
-  DTModelStorage: 1e098b99e1aa431632f45318e4b145a51aeec54b
-  DTPickerPresenter: 0ed2826ddccf675a3e2f9728ee8a3ca443fb7dbf
-  DTTableViewManager: dc5ddb06b44090fadf82dc23a06d6ab0f51495e3
+  DTModelStorage: bcd7ca1d9ed79ee1781a11dbb4823e58c6865e78
+  DTPickerPresenter: 1976573e3475534559b6ec1dad64b2ece16c966d
+  DTTableViewManager: d4f36357f419a5db62a01eebd9d587d9e52b09a5
 
-COCOAPODS: 0.35.0.rc2
+COCOAPODS: 0.38.2
